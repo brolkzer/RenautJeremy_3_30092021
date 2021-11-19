@@ -1,1 +1,71 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+/* Colors */
+/* Font sizes */
+/* Font weights */
+/* Mixins */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+}
+
+.header__logo__image {
+  width: 50%;
+}
+
+.header__loc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #cccccc), color-stop(4%, #d4d4d4), color-stop(6%, #dbdbdb), color-stop(8%, #e0e0e0), color-stop(10%, #ebebeb));
+  background: linear-gradient(#cccccc 2%, #d4d4d4 4%, #dbdbdb 6%, #e0e0e0 8%, #ebebeb 10%);
+  height: 8vh;
+  font-weight: 500;
+}
+
+.header__loc form {
+  padding-left: 1rem;
+}
+
+.header__loc .saisieFormulaire {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background: #ebebeb;
+  padding: 0;
+  width: 15ch;
+  border: none;
+  outline: none;
+}
+
+.header__loc .saisieFormulaire:focus {
+  border: none;
+  outline: none;
+}
+/*# sourceMappingURL=main.css.map */

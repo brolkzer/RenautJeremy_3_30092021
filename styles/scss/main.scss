@@ -1,0 +1,57 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+}
+
+.header__logo{
+  @include flexCenter;
+  height: 10vh;
+  
+  &__image{
+    width: 50%;
+  }
+}
+
+.header__loc{
+  @include flexCenter;
+  background: linear-gradient(
+    hsl(0, 0%, 80%) 2%,
+    hsl(0, 0%, 83%) 4%,
+    hsl(0, 0%, 86%) 6%,
+    hsl(0, 0%, 88%) 8%,
+    hsl(0, 0%, 92%) 10%,
+  );
+  height: 8vh;
+  font-weight: $medium-500;
+
+  form{
+    padding-left: 1rem;
+  }
+  
+  .saisieFormulaire{
+    font-family: Roboto, sans-serif;
+    font-size: $size-medium;
+    font-weight: $medium-500;
+    background: hsl(0, 0%, 92%);
+    padding: 0;
+    width: 15ch;
+    border: none;
+    outline: none;
+    &:focus{
+      border: none;
+      outline: none;
+    }
+
+  }
+}
