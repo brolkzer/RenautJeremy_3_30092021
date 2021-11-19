@@ -9,6 +9,7 @@
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 body {
@@ -31,6 +32,10 @@ body {
 
 .header__logo__image {
   width: 50%;
+  max-width: 370px;
+  max-height: 65px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header__loc {
@@ -43,8 +48,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #cccccc), color-stop(4%, #d4d4d4), color-stop(6%, #dbdbdb), color-stop(8%, #e0e0e0), color-stop(10%, #ebebeb));
-  background: linear-gradient(#cccccc 2%, #d4d4d4 4%, #dbdbdb 6%, #e0e0e0 8%, #ebebeb 10%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #cccccc), color-stop(4%, #d4d4d4), color-stop(6%, #dbdbdb), color-stop(8%, #e0e0e0), color-stop(10%, #e6e6e6));
+  background: linear-gradient(#cccccc 2%, #d4d4d4 4%, #dbdbdb 6%, #e0e0e0 8%, #e6e6e6 10%);
   height: 8vh;
   font-weight: 500;
 }
@@ -57,7 +62,7 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
-  background: #ebebeb;
+  background: #e6e6e6;
   padding: 0;
   width: 15ch;
   border: none;
@@ -67,5 +72,132 @@ body {
 .header__loc .saisieFormulaire:focus {
   border: none;
   outline: none;
+}
+
+.header__loc .saisieFormulaire::-webkit-input-placeholder {
+  color: black;
+}
+
+.header__loc .saisieFormulaire:-ms-input-placeholder {
+  color: black;
+}
+
+.header__loc .saisieFormulaire::-ms-input-placeholder {
+  color: black;
+}
+
+.header__loc .saisieFormulaire::placeholder {
+  color: black;
+}
+
+.browse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f2f2f2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.browse h1 {
+  font-weight: 700;
+}
+
+.browse p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #737373;
+}
+
+.browse__button {
+  font-size: 18px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  padding: 1rem 1.5rem;
+  border-radius: 9999px;
+}
+
+.blockSteps {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blockSteps__steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blockSteps__steps--tofollow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  padding: 1.5rem 2rem;
+  margin: 1rem;
+  background: #f2f2f2;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 10px #a6a6a6;
+          box-shadow: 2px 2px 10px #a6a6a6;
+}
+
+.blockSteps__steps--tofollow p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+}
+
+.stepsIcons {
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.stepsIcons__1 {
+  margin-right: calc(1rem + 6px);
+}
+
+.stepsIcons__2 {
+  margin-right: calc(1rem + 2px);
 }
 /*# sourceMappingURL=main.css.map */
