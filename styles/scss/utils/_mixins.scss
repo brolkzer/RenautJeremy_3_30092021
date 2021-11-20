@@ -5,3 +5,14 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin stepsNumbers($content){
+  content: $content;
+  position: absolute;
+  left: -15px;
+  top: 30%;
+  padding: 0.25rem 0.5rem;
+  background-color: $clr-purple;
+  border-radius: 100%;
+  color: white;
+}

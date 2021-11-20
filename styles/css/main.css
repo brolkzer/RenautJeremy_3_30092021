@@ -118,7 +118,7 @@ body {
 .browse p {
   font-size: 20px;
   font-weight: 400;
-  color: #737373;
+  color: #595959;
 }
 
 .browse__button {
@@ -139,6 +139,10 @@ body {
           flex-direction: column;
 }
 
+.blockSteps h2 {
+  padding-left: 1rem;
+}
+
 .blockSteps__steps {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,18 +157,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 1.5rem;
 }
 
 .blockSteps__steps--tofollow {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
+  width: 100%;
+  margin-bottom: 1rem;
   padding: 1.5rem 2rem;
-  margin: 1rem;
   background: #f2f2f2;
   border: 1px solid transparent;
   border-radius: 15px;
@@ -202,6 +208,43 @@ body {
   margin-right: calc(1rem + 2px);
 }
 
+.blockSteps__steps--tofollow .stepsIcons__3 {
+  color: #9356DC;
+}
+
+.blockSteps .tofollow--1::before {
+  content: "1";
+  position: absolute;
+  left: -15px;
+  top: 30%;
+  padding: 0.25rem 0.5rem;
+  background-color: #9356DC;
+  border-radius: 100%;
+  color: white;
+}
+
+.blockSteps .tofollow--2::before {
+  content: "2";
+  position: absolute;
+  left: -15px;
+  top: 30%;
+  padding: 0.25rem 0.5rem;
+  background-color: #9356DC;
+  border-radius: 100%;
+  color: white;
+}
+
+.blockSteps .tofollow--3::before {
+  content: "3";
+  position: absolute;
+  left: -15px;
+  top: 30%;
+  padding: 0.25rem 0.5rem;
+  background-color: #9356DC;
+  border-radius: 100%;
+  color: white;
+}
+
 .restaurants {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -224,7 +267,7 @@ body {
       -ms-flex-pack: end;
           justify-content: end;
   background-size: cover;
-  background-position-y: 65%;
+  background-position-y: 75%;
   background-repeat: no-repeat;
   border-radius: 15px;
   overflow: hidden;
@@ -265,12 +308,14 @@ body {
 
 .restaurants .vignette__desc h3 {
   margin: 0.25rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 0.25rem;
 }
 
 .restaurants .vignette__desc p {
   margin: 0.25rem;
   padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
 }
 
 .h3__desc {
@@ -319,5 +364,38 @@ body {
 
 .grey__heart {
   z-index: 1;
+}
+
+footer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #595954;
+  padding: 1.5rem;
+}
+
+footer h2 {
+  font-family: Shrikhand, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  color: white;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.footer--icons {
+  margin-right: 1rem;
+}
+
+.fa-utensils {
+  margin-right: calc(1rem + 6px);
 }
 /*# sourceMappingURL=main.css.map */

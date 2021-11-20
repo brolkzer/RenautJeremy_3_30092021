@@ -1,6 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
-@import "./utils/Lists";
+@import "./utils/lists";
 
 *, *::before, *::after{
   box-sizing: border-box;
@@ -100,17 +100,23 @@ body{
   padding-left: 1.5rem;
   flex-direction: column;
 
+    h2{
+      padding-left: 1rem;
+    }
+
     &__steps{
       @include flexCenter;
       flex-direction: column;
+      padding: 1.5rem;
       
     }
       &__steps--tofollow{
+        position: relative;
         display: flex;
         align-items: center;
-        width: 90%;
+        width: 100%;
+        margin-bottom: 1rem;
         padding: 1.5rem 2rem;
-        margin: 1rem;
         background: hsl(0, 0, 95%);
         border: 1px solid transparent;
         border-radius: 15px;
@@ -136,7 +142,26 @@ body{
         .stepsIcons__2{
           margin-right: calc(1rem + 2px);
         }
-      }              
+
+        .stepsIcons__3{
+          color: $clr-purple;
+        }
+      }
+      
+      .tofollow{
+
+        &--1::before{
+          @include stepsNumbers($content: '1');
+        }
+
+        &--2::before{
+          @include stepsNumbers($content: '2')
+        }
+
+        &--3::before{
+          @include stepsNumbers($content: '3')
+        }
+      }
 }
 
 .restaurants{
@@ -150,7 +175,7 @@ body{
       display: flex;
       justify-content: end;      
       background-size: cover;
-      background-position-y: 65%;
+      background-position-y: 75%;
       background-repeat: no-repeat;
       border-radius: 15px;
       overflow: hidden;
@@ -183,13 +208,15 @@ body{
 
           h3{
             margin: 0.25rem;
-            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+            padding-left: 0.25rem;
             
           }
 
           p{
             margin: 0.25rem;
             padding-bottom: 0.5rem;
+            padding-left: 0.25rem;
           }
         }
 
@@ -236,5 +263,35 @@ body{
 
 .grey__heart{
   z-index: 1;
+}
+
+footer{
+  flex-direction: column;
+  background-color: #595954;
+  padding: 1.5rem;
+
+    h2{
+      font-family: Shrikhand, sans-serif;
+      font-weight: $light-300;
+      font-size: $size-large;
+      color: white;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    
+    p{
+      color: white;
+      font-weight: $medium-500;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+}
+
+.footer--icons{
+  margin-right: 1rem;
+}
+
+.fa-utensils{
+  margin-right: calc(1rem + 6px);
 }
 
