@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/Lists";
 
 *, *::before, *::after{
   box-sizing: border-box;
@@ -120,20 +121,120 @@ body{
           flex-wrap: wrap;
           margin: 0;
         }  
+
+        .stepsIcons{
+          margin-right: 1rem;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;            
+        }
+        
+        .stepsIcons__1{
+          margin-right: calc(1rem + 6px);
+        }
+        
+        .stepsIcons__2{
+          margin-right: calc(1rem + 2px);
+        }
       }              
 }
 
-.stepsIcons{
-  margin-right: 1rem;
+.restaurants{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  flex-direction: column;
+
+    .vignette{
+      flex-direction: column;
+      display: flex;
+      justify-content: end;      
+      background-size: cover;
+      background-position-y: 65%;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      overflow: hidden;
+      height: 220px;
+      min-width: 220px;
+      max-width: 100%;
+      margin: 1rem 0rem;
+      box-shadow: 2px 2px 10px $clr-mediumgrey;
+
+        &--1{
+          background-image: nth($bg-img , 1);
+        }
+
+        &--2{
+          background-image: nth($bg-img , 2);
+        }
+
+        &--3{
+          background-image: nth($bg-img , 3);
+        }
+
+        &--4{
+          background-image: nth($bg-img , 4);
+        }
+
+        &__desc{
+          display: flex;
+          flex-direction: column;
+          background: white;       
+
+          h3{
+            margin: 0.25rem;
+            padding-bottom: 0.5rem;
+            
+          }
+
+          p{
+            margin: 0.25rem;
+            padding-bottom: 0.5rem;
+          }
+        }
+
+    }
+}
+
+.h3__desc{
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;            
+  justify-content: space-between;
+
+  .heart--icons{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    position: relative;
+
+      .grey__heart, .pink__heart{
+        display: flex;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+      }
+
+      .grey__heart{
+        color: $clr-mediumgrey;
+        visibility: show;
+      }
+
+      .pink__heart{
+        color: $clr-pink;
+        visibility: hidden;
+      }
+
+      .fa-heart:first-of-type:hover + .fa-heart,
+       .fa-heart:first-of-type:active + .fa-heart,
+        .fa-heart:first-of-type:focus + .fa-heart{
+        visibility: visible;
+      }
+  }
 }
 
-.stepsIcons__1{
-  margin-right: calc(1rem + 6px);
+.pink__heart{
+  z-index: 2;
 }
 
-.stepsIcons__2{
-  margin-right: calc(1rem + 2px);
+.grey__heart{
+  z-index: 1;
 }
+

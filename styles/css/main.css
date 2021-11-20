@@ -2,6 +2,7 @@
 /* Font sizes */
 /* Font weights */
 /* Mixins */
+/* Lists */
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -180,7 +181,7 @@ body {
   margin: 0;
 }
 
-.stepsIcons {
+.blockSteps__steps--tofollow .stepsIcons {
   margin-right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,11 +194,130 @@ body {
       flex-wrap: nowrap;
 }
 
-.stepsIcons__1 {
+.blockSteps__steps--tofollow .stepsIcons__1 {
   margin-right: calc(1rem + 6px);
 }
 
-.stepsIcons__2 {
+.blockSteps__steps--tofollow .stepsIcons__2 {
   margin-right: calc(1rem + 2px);
+}
+
+.restaurants {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.restaurants .vignette {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  background-size: cover;
+  background-position-y: 65%;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 220px;
+  min-width: 220px;
+  max-width: 100%;
+  margin: 1rem 0rem;
+  -webkit-box-shadow: 2px 2px 10px #a6a6a6;
+          box-shadow: 2px 2px 10px #a6a6a6;
+}
+
+.restaurants .vignette--1 {
+  background-image: url(/MaquettesOhmyfood/images/restaurants/jay-wennington.jpg);
+}
+
+.restaurants .vignette--2 {
+  background-image: url(/MaquettesOhmyfood/images/restaurants/stil-u2.jpg);
+}
+
+.restaurants .vignette--3 {
+  background-image: url(/MaquettesOhmyfood/images/restaurants/toa-heftiba.jpg);
+}
+
+.restaurants .vignette--4 {
+  background-image: url(/MaquettesOhmyfood/images/restaurants/louis-hansel.jpg);
+}
+
+.restaurants .vignette__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+}
+
+.restaurants .vignette__desc h3 {
+  margin: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.restaurants .vignette__desc p {
+  margin: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.h3__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.h3__desc .heart--icons {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+.h3__desc .heart--icons .grey__heart, .h3__desc .heart--icons .pink__heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.h3__desc .heart--icons .grey__heart {
+  color: #a6a6a6;
+  visibility: show;
+}
+
+.h3__desc .heart--icons .pink__heart {
+  color: #FF79DA;
+  visibility: hidden;
+}
+
+.h3__desc .heart--icons .fa-heart:first-of-type:hover + .fa-heart,
+.h3__desc .heart--icons .fa-heart:first-of-type:active + .fa-heart,
+.h3__desc .heart--icons .fa-heart:first-of-type:focus + .fa-heart {
+  visibility: visible;
+}
+
+.pink__heart {
+  z-index: 2;
+}
+
+.grey__heart {
+  z-index: 1;
 }
 /*# sourceMappingURL=main.css.map */
