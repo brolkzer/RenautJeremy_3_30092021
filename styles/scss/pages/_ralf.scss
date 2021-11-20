@@ -1,0 +1,17 @@
+.header__arrow{
+  position: absolute;
+  color: $clr-darkgrey;
+  left: 15px;
+  top: 10px;
+  padding: 2rem 1.5rem;
+}
+
+.restaurant{
+  @include flexCenter;
+
+    &__image{
+      background-image: url(/MaquettesOhmyfood/maquettes/menu-a_la_francaise.png);
+      background-size: cover;
+      padding: 10rem 0;
+    }
+}

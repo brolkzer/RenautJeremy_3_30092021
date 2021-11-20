@@ -4,10 +4,12 @@
 @import "./utils/lists";
 @import "./layouts/form";
 @import "./pages/home";
+@import "./pages/ralf";
 
 .header__logo{
   @include flexCenter;
   height: 10vh;
+  position: relative;
   
   &__image{
     width: 50%;
@@ -19,7 +21,7 @@
 
 footer{
   flex-direction: column;
-  background-color: #595954;
+  background-color: $clr-darkgrey;
   padding: 1.5rem;
 
     h2{

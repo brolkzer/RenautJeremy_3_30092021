@@ -97,7 +97,7 @@ body {
 .browse p {
   font-size: 20px;
   font-weight: 400;
-  color: #595959;
+  color: #595954;
 }
 
 .browse__button {
@@ -345,6 +345,32 @@ body {
   z-index: 1;
 }
 
+.header__arrow {
+  position: absolute;
+  color: #595954;
+  left: 15px;
+  top: 10px;
+  padding: 2rem 1.5rem;
+}
+
+.restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurant__image {
+  background-image: url(/MaquettesOhmyfood/maquettes/menu-a_la_francaise.png);
+  background-size: cover;
+  padding: 10rem 0;
+}
+
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,6 +382,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 10vh;
+  position: relative;
 }
 
 .header__logo__image {
