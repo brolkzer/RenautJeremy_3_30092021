@@ -16,3 +16,12 @@
   border-radius: 100%;
   color: white;
 }
+
+@mixin button{
+  font-size: $size-large;
+  background: linear-gradient(
+    to bottom right,
+    #FF79DA,
+    #9356DC,
+  );
+}

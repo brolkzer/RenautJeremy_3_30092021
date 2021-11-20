@@ -1,0 +1,212 @@
+.header__loc{
+  @include flexCenter;
+  background: linear-gradient(
+    hsl(0, 0%, 80%) 2%,
+    hsl(0, 0%, 83%) 4%,
+    hsl(0, 0%, 86%) 6%,
+    hsl(0, 0%, 88%) 8%,
+    hsl(0, 0%, 90%) 10%,
+  );
+  height: 8vh;
+  font-weight: $medium-500;
+
+  form{
+    padding-left: 1rem;
+  }
+}
+
+.browse{
+  @include flexCenter;
+  background:hsl(0, 0%, 95%);
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  h1{
+    font-weight: $bold-700;
+  }
+
+  p{
+    font-size: $size-xlarge;
+    font-weight: $regular-400;
+    color: $clr-darkgrey;
+  }
+
+  &__button{
+    @include button;
+    padding: 1rem 1.5rem;
+    border-radius: 9999px;
+  }
+}
+
+.blockSteps{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  flex-direction: column;
+
+    h2{
+      padding-left: 1rem;
+    }
+
+    &__steps{
+      @include flexCenter;
+      flex-direction: column;
+      padding: 1.5rem;
+      
+    }
+      &__steps--tofollow{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 1.5rem 2rem;
+        background: hsl(0, 0, 95%);
+        border: 1px solid transparent;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px $clr-mediumgrey;
+
+        p{
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0;
+        }  
+
+        .stepsIcons{
+          margin-right: 1rem;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;            
+        }
+        
+        .stepsIcons__1{
+          margin-right: calc(1rem + 6px);
+        }
+        
+        .stepsIcons__2{
+          margin-right: calc(1rem + 2px);
+        }
+
+        .stepsIcons__3{
+          color: $clr-purple;
+        }
+      }
+      
+      .tofollow{
+
+        &--1::before{
+          @include stepsNumbers($content: '1');
+        }
+
+        &--2::before{
+          @include stepsNumbers($content: '2')
+        }
+
+        &--3::before{
+          @include stepsNumbers($content: '3')
+        }
+      }
+}
+
+.restaurants{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+  flex-direction: column;
+
+    .vignette{
+      flex-direction: column;
+      display: flex;
+      justify-content: end;      
+      background-size: cover;
+      background-position-y: 75%;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      overflow: hidden;
+      height: 220px;
+      min-width: 220px;
+      max-width: 100%;
+      margin: 1rem 0rem;
+      box-shadow: 2px 2px 10px $clr-mediumgrey;
+
+        &--1{
+          background-image: nth($bg-img , 1);
+        }
+
+        &--2{
+          background-image: nth($bg-img , 2);
+        }
+
+        &--3{
+          background-image: nth($bg-img , 3);
+        }
+
+        &--4{
+          background-image: nth($bg-img , 4);
+        }
+
+        &__desc{
+          display: flex;
+          flex-direction: column;
+          background: white;       
+
+          h3{
+            margin: 0.25rem;
+            padding-top: 0.5rem;
+            padding-left: 0.25rem;
+            
+          }
+
+          p{
+            margin: 0.25rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.25rem;
+          }
+        }
+
+    }
+}
+
+.h3__desc{
+  display: flex;
+  justify-content: space-between;
+
+  .heart--icons{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    position: relative;
+
+      .grey__heart, .pink__heart{
+        display: flex;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+      }
+
+      .grey__heart{
+        color: $clr-mediumgrey;
+        visibility: show;
+      }
+
+      .pink__heart{
+        color: $clr-pink;
+        visibility: hidden;
+      }
+
+      .fa-heart:first-of-type:hover + .fa-heart,
+       .fa-heart:first-of-type:active + .fa-heart,
+        .fa-heart:first-of-type:focus + .fa-heart{
+        visibility: visible;
+      }
+  }
+}
+
+.pink__heart{
+  z-index: 2;
+}
+
+.grey__heart{
+  z-index: 1;
+}

@@ -1,0 +1,17 @@
+.saisieFormulaire{
+  font-family: Roboto, sans-serif;
+  font-size: $size-medium;
+  font-weight: $medium-500;
+  background: hsl(0, 0%, 90%);
+  padding: 0;
+  width: 15ch;
+  border: none;
+  outline: none;
+   &:focus{
+     border: none;
+      outline: none;
+    }
+   &::placeholder{
+     color: black;
+   }
+}
