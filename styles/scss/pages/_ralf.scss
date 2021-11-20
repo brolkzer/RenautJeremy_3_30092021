@@ -7,11 +7,40 @@
 }
 
 .restaurant{
-  @include flexCenter;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
 
     &__image{
-      background-image: url(/MaquettesOhmyfood/maquettes/menu-a_la_francaise.png);
-      background-size: cover;
-      padding: 10rem 0;
+      width: 100%;
+      height: 250px;
+
+        &--photo{
+          height: 250px;
+          width: 100%;
+          object-fit: cover;
+        }
     }
+
+    &__menu{
+      width: 100%;
+      padding: 1rem;
+      
+
+        &--h1{
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row;
+        }
+    }
+}
+
+.menu__title{
+  display: block;
+  font-family: Shrikhand, sans-serif;
+  font-weight: $bold-700;
 }

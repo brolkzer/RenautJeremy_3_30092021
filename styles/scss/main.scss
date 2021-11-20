@@ -1,10 +1,11 @@
-@import "./base/norms";
 @import "./utils/variables";
 @import "./utils/mixins";
-@import "./utils/lists";
+@import "./base/norms";
+@import "./composants/hearts";
 @import "./layouts/form";
 @import "./pages/home";
 @import "./pages/ralf";
+
 
 .header__logo{
   @include flexCenter;
@@ -20,9 +21,9 @@
 }
 
 footer{
-  flex-direction: column;
   background-color: $clr-darkgrey;
   padding: 1.5rem;
+  width: 100%;
 
     h2{
       font-family: Shrikhand, sans-serif;

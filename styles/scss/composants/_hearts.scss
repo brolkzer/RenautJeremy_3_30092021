@@ -1,0 +1,28 @@
+.heart--icons{
+  padding-top: 1rem;
+  padding-right: 1rem;
+  position: relative;
+
+  .grey__heart, .pink__heart{
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+
+  .grey__heart{
+    color: $clr-mediumgrey;
+    visibility: visible;
+  } 
+
+  .pink__heart{
+    color: $clr-pink;
+    visibility: hidden;
+  }
+
+  .fa-heart:first-of-type:hover + .fa-heart,
+  .fa-heart:first-of-type:active + .fa-heart,
+  .fa-heart:first-of-type:focus + .fa-heart{
+      visibility: visible;
+  }
+}

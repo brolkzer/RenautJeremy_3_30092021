@@ -1,3 +1,7 @@
+/* Colors */
+/* Font sizes */
+/* Font weights */
+/* Mixins */
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,11 +17,37 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-/* Colors */
-/* Font sizes */
-/* Font weights */
-/* Mixins */
-/* Lists */
+.heart--icons {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+.heart--icons .grey__heart, .heart--icons .pink__heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.heart--icons .grey__heart {
+  color: #a6a6a6;
+  visibility: visible;
+}
+
+.heart--icons .pink__heart {
+  color: #FF79DA;
+  visibility: hidden;
+}
+
+.heart--icons .fa-heart:first-of-type:hover + .fa-heart,
+.heart--icons .fa-heart:first-of-type:active + .fa-heart,
+.heart--icons .fa-heart:first-of-type:focus + .fa-heart {
+  visibility: visible;
+}
+
 .saisieFormulaire {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -258,22 +288,6 @@ body {
           box-shadow: 2px 2px 10px #a6a6a6;
 }
 
-.restaurants .vignette--1 {
-  background-image: url(/MaquettesOhmyfood/images/restaurants/jay-wennington.jpg);
-}
-
-.restaurants .vignette--2 {
-  background-image: url(/MaquettesOhmyfood/images/restaurants/stil-u2.jpg);
-}
-
-.restaurants .vignette--3 {
-  background-image: url(/MaquettesOhmyfood/images/restaurants/toa-heftiba.jpg);
-}
-
-.restaurants .vignette--4 {
-  background-image: url(/MaquettesOhmyfood/images/restaurants/louis-hansel.jpg);
-}
-
 .restaurants .vignette__desc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,12 +303,30 @@ body {
   margin: 0.25rem;
   padding-top: 0.5rem;
   padding-left: 0.25rem;
+  color: black;
 }
 
 .restaurants .vignette__desc p {
   margin: 0.25rem;
   padding-bottom: 0.5rem;
   padding-left: 0.25rem;
+  color: black;
+}
+
+.vignette--1 {
+  background-image: url(/MaquettesOhmyfood/images/restaurants/jay-wennington.jpg);
+}
+
+.vignette--2 {
+  background-image: url(/MaquettesOhmyfood/images/restaurants/stil-u2.jpg);
+}
+
+.vignette--3 {
+  background-image: url(/MaquettesOhmyfood/images/restaurants/toa-heftiba.jpg);
+}
+
+.vignette--4 {
+  background-image: url(/MaquettesOhmyfood/images/restaurants/louis-hansel.jpg);
 }
 
 .h3__desc {
@@ -304,37 +336,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.h3__desc .heart--icons {
-  padding-top: 1rem;
-  padding-right: 1rem;
-  position: relative;
-}
-
-.h3__desc .heart--icons .grey__heart, .h3__desc .heart--icons .pink__heart {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 25px;
-  right: 25px;
-}
-
-.h3__desc .heart--icons .grey__heart {
-  color: #a6a6a6;
-  visibility: show;
-}
-
-.h3__desc .heart--icons .pink__heart {
-  color: #FF79DA;
-  visibility: hidden;
-}
-
-.h3__desc .heart--icons .fa-heart:first-of-type:hover + .fa-heart,
-.h3__desc .heart--icons .fa-heart:first-of-type:active + .fa-heart,
-.h3__desc .heart--icons .fa-heart:first-of-type:focus + .fa-heart {
-  visibility: visible;
 }
 
 .pink__heart {
@@ -360,15 +361,54 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 
 .restaurant__image {
-  background-image: url(/MaquettesOhmyfood/maquettes/menu-a_la_francaise.png);
-  background-size: cover;
-  padding: 10rem 0;
+  width: 100%;
+  height: 250px;
+}
+
+.restaurant__image--photo {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurant__menu {
+  width: 100%;
+  padding: 1rem;
+}
+
+.restaurant__menu--h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu__title {
+  display: block;
+  font-family: Shrikhand, sans-serif;
+  font-weight: 700;
 }
 
 .header__logo {
@@ -394,12 +434,9 @@ body {
 }
 
 footer {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: #595954;
   padding: 1.5rem;
+  width: 100%;
 }
 
 footer h2 {
