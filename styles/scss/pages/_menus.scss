@@ -2,7 +2,7 @@
   position: absolute;
   color: $clr-darkgrey;
   left: 15px;
-  top: 10px;
+  top: 15px;
   padding: 2rem 1.5rem;
 }
 
@@ -12,6 +12,37 @@
   align-items: flex-end;
   flex-direction: column;
   width: 100%;
+
+    &__plats{
+      margin: 1rem 0;
+      padding: 0.75rem 0.5rem;
+      box-shadow: 2px 2px 10px $clr-mediumgrey;
+      border-radius: 15px;
+      border: 1px solid transparent;
+      overflow: auto;
+    
+        &--h3{
+          margin: 0;
+        }
+      
+        &--p{
+          display: flex;
+          justify-content: space-between;
+          padding-right: 1rem;
+        }   
+    
+        &--closing{
+          margin-bottom: 3rem;
+        }
+    
+        .plats{
+          margin: 0.25rem 0;
+    
+            &__prix{
+              font-weight: $bold-700;
+            }
+        }
+    }
 
     &__image{
       width: 100%;
@@ -44,6 +75,12 @@
     }
 }
 
+.plats__ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .menu__title{
   display: block;
   font-family: Shrikhand, sans-serif;
@@ -65,36 +102,6 @@
       width: 2.5rem;
       height: 4px;
       background-color: $clr-green;
-    }
-}
-
-.restaurant__plats{
-  margin: 1rem 0;
-  padding: 0.75rem 0.5rem;
-  box-shadow: 2px 2px 10px $clr-mediumgrey;
-  border-radius: 15px;
-  border: 1px solid transparent;
-
-    &--h3{
-      margin: 0;
-    }
-  
-    &--p{
-      display: flex;
-      justify-content: space-between;
-      padding-right: 1rem;
-    }   
-
-    &--closing{
-      margin-bottom: 3rem;
-    }
-
-    .plats{
-      margin: 0.25rem 0;
-
-        &__prix{
-          font-weight: $bold-700;
-        }
     }
 }
 
