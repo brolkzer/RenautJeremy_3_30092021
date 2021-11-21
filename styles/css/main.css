@@ -293,7 +293,7 @@ body {
   background-position-y: 75%;
   background-repeat: no-repeat;
   border-radius: 15px;
-  /*overflow: hidden;*/
+  overflow: hidden;
   height: 220px;
   min-width: 220px;
   max-width: 100%;
