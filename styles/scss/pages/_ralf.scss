@@ -16,17 +16,24 @@
     &__image{
       width: 100%;
       height: 250px;
+      z-index: 0;
 
         &--photo{
           height: 250px;
           width: 100%;
           object-fit: cover;
+          z-index: 0;
         }
     }
 
     &__menu{
       width: 100%;
-      padding: 1rem;
+      padding: 0 1rem;
+      margin-top: -35px;
+      background-color: white;
+      border-top-right-radius: 40px;
+      border-top-left-radius: 40px;
+      z-index: 1;
       
 
         &--h1{
