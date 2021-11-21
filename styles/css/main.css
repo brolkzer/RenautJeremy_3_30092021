@@ -297,7 +297,7 @@ body {
   background-position-y: 75%;
   background-repeat: no-repeat;
   border-radius: 15px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   height: 220px;
   min-width: 220px;
   max-width: 100%;
@@ -332,19 +332,19 @@ body {
 }
 
 .vignette--1 {
-  background-image: url(/../../../MaquettesOhmyfood\images\restaurants\jay-wennington.jpg);
+  background-image: url(../../MaquettesOhmyfood/images/restaurants/jay_wennington.jpg);
 }
 
 .vignette--2 {
-  background-image: url(/MaquettesOhmyfood/images/restaurants/stil-u2.jpg);
+  background-image: url(../../MaquettesOhmyfood/images/restaurants/stil_u2.jpg);
 }
 
 .vignette--3 {
-  background-image: url(/MaquettesOhmyfood/images/restaurants/toa-heftiba.jpg);
+  background-image: url(../../MaquettesOhmyfood/images/restaurants/toa_heftiba.jpg);
 }
 
 .vignette--4 {
-  background-image: url(/MaquettesOhmyfood/images/restaurants/louis-hansel.jpg);
+  background-image: url(../../MaquettesOhmyfood/images/restaurants/louis_hansel.jpg);
 }
 
 .h3__desc {
