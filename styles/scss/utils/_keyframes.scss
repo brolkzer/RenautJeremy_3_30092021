@@ -30,3 +30,36 @@
     opacity: 1;
   }
 }
+
+@keyframes loader{
+  0%{
+    transform: translateY(0%)
+  }
+
+  75%{
+    transform: translateY(0%)
+  }
+
+  100%{
+    transform: translateY(-100%)
+  }
+}
+
+@keyframes logo{
+  0%{
+    transform: translateX(0%);
+  }
+
+  50%{
+    transform: translateX(0%);
+  }
+
+  70%{
+    transform: translateX(-10%);
+    transform: scale(0.85);
+  }
+
+  100%{
+    transform: translateX(100%);
+  }
+}

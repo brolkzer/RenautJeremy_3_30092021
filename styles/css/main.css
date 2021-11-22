@@ -64,7 +64,79 @@
   }
 }
 
-*, *::before, *::after {
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  75% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  75% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  50% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  70% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes logo {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  50% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  70% {
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+*:not(.loader), *:not(.loader)::before, *:not(.loader)::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -77,6 +149,14 @@ a {
 body {
   margin: 0 auto;
   font-family: Roboto, sans-serif;
+}
+
+body > .loader {
+  visibility: visible;
+}
+
+body > .loader .loader__logo {
+  visibility: visible;
 }
 
 .heart--icons {
@@ -158,6 +238,34 @@ body {
 
 .saisieFormulaire::placeholder {
   color: black;
+}
+
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #99E2D0;
+  opacity: 1;
+  position: fixed;
+  -webkit-animation: loader 3s forwards;
+          animation: loader 3s forwards;
+}
+
+.loader__logo {
+  height: 30vh;
+  width: 70vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-animation: logo 3s forwards cubic-bezier(0, 1.6, 0.03, 1.61);
+          animation: logo 3s forwards cubic-bezier(0, 1.6, 0.03, 1.61);
 }
 
 .header__loc {
@@ -267,7 +375,6 @@ body {
   margin-bottom: 1rem;
   padding: 1.5rem 2rem;
   background: #f2f2f2;
-  border: 1px solid transparent;
   border-radius: 15px;
   -webkit-box-shadow: 2px 2px 10px #a6a6a6;
           box-shadow: 2px 2px 10px #a6a6a6;
@@ -648,7 +755,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 10vh;
-  position: relative;
 }
 
 .header__logo__image {

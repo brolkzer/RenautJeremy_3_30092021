@@ -1,3 +1,21 @@
+.loader{
+  @include flexCenter;
+  min-width: 100vw;
+  min-height: 100vh;  
+  background-color: $clr-green;
+  opacity: 1;
+  position: fixed;
+  animation: loader 3s forwards;  
+
+    &__logo{      
+      height: 30vh;
+      width: 70vw;
+      object-fit: contain;
+
+      animation: logo 3s forwards cubic-bezier(0,1.6,.03,1.61);
+    }
+}
+
 .header__loc{
   @include flexCenter;
   background: linear-gradient(
@@ -70,7 +88,6 @@
         margin-bottom: 1rem;
         padding: 1.5rem 2rem;
         background: hsl(0, 0, 95%);
-        border: 1px solid transparent;
         border-radius: 15px;
         box-shadow: 2px 2px 10px $clr-mediumgrey;
 

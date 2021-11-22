@@ -11,7 +11,6 @@
 .header__logo{
   @include flexCenter;
   height: 10vh;
-  position: relative;
   
   &__image{
     width: 50%;

@@ -1,4 +1,4 @@
-*, *::before, *::after{
+*:not(.loader), *:not(.loader)::before, *:not(.loader)::after{
   box-sizing: border-box;
 }
 
@@ -10,4 +10,12 @@ a{
 body{
   margin: 0 auto;
   font-family: Roboto, sans-serif;
+
+  > .loader{
+    visibility: visible;
+
+      .loader__logo{
+        visibility: visible;
+      }
+  }
 }
