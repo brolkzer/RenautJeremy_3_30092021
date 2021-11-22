@@ -35,6 +35,14 @@
 
   &__button{
     @include button;
+
+      &:hover, &:focus-visible{
+        background: linear-gradient(
+         to bottom right,
+         #ff94e1,
+         #a06be1,
+        );
+      }
   }
 }
 
@@ -65,6 +73,10 @@
         border: 1px solid transparent;
         border-radius: 15px;
         box-shadow: 2px 2px 10px $clr-mediumgrey;
+
+          &:hover, &:focus-visible{
+            box-shadow: 2px 2px 10px $clr-darkgrey;
+          }
 
         p{
           display: flex;
@@ -128,6 +140,10 @@
       max-width: 100%;
       margin: 1rem 0rem;
       box-shadow: 2px 2px 10px $clr-mediumgrey;
+
+        &:hover, &:focus-visible{
+            box-shadow: 2px 2px 10px $clr-darkgrey;
+        }
 
         &__desc{
           display: flex;
