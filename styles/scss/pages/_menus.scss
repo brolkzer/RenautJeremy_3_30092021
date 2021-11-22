@@ -105,6 +105,22 @@
     }
 }
 
+.entreesFade{
+  animation: fadeInEntrees 1s;
+
+  &::after{
+
+  }
+}
+
+.platsFade{
+  animation: fadeInPlats 2s;
+}
+
+.dessertsFade{
+  animation: fadeInDesserts 3s;
+}
+
 .command{
   @include flexCenter;
   margin-bottom: 4rem;
