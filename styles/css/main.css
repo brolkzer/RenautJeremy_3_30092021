@@ -136,6 +136,24 @@
   }
 }
 
+@-webkit-keyframes stealth {
+  0%, 90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stealth {
+  0%, 90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 *:not(.loader), *:not(.loader)::before, *:not(.loader)::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -266,6 +284,12 @@ body > .loader .loader__logo {
      object-fit: contain;
   -webkit-animation: logo 3s forwards cubic-bezier(0, 1.6, 0.03, 1.61);
           animation: logo 3s forwards cubic-bezier(0, 1.6, 0.03, 1.61);
+}
+
+.main_wrapper {
+  opacity: 1;
+  -webkit-animation: stealth 3s forwards;
+          animation: stealth 3s forwards;
 }
 
 .header__loc {

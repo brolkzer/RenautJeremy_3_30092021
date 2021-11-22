@@ -16,6 +16,12 @@
     }
 }
 
+.main_wrapper{
+  opacity: 1;
+
+  animation: stealth 3s forwards;
+}
+
 .header__loc{
   @include flexCenter;
   background: linear-gradient(
