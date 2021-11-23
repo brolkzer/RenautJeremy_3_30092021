@@ -154,7 +154,7 @@
   }
 }
 
-*:not(.loader), *:not(.loader)::before, *:not(.loader)::after {
+*, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -175,6 +175,10 @@ body > .loader {
 
 body > .loader .loader__logo {
   visibility: visible;
+}
+
+.main_wrapper {
+  max-width: 1500px;
 }
 
 .heart--icons {
@@ -618,6 +622,10 @@ body > .loader .loader__logo {
           transform: scaleX(100%);
 }
 
+.restaurant__plats:hover .restaurant__plats--p, .restaurant__plats:hover .restaurant__plats--h3 {
+  max-width: calc(100% - 80px);
+}
+
 .restaurant__plats--h3 {
   margin: 0;
 }
@@ -748,6 +756,11 @@ body > .loader .loader__logo {
   padding: 1rem 1.5rem;
   border-radius: 9999px;
   color: white;
+}
+
+.command__button:hover, .command__button:focus-visible {
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff94e1), to(#a06be1));
+  background: linear-gradient(to bottom right, #ff94e1, #a06be1);
 }
 
 .check {

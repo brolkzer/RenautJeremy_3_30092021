@@ -28,6 +28,10 @@
         &:hover .check, &:focus-visible .check{
           transform: scaleX(100%);                   
         }
+
+        &:hover .restaurant__plats--p, &:hover .restaurant__plats--h3{
+          max-width: calc(100% - 80px);
+        }
     
         &--h3{
           margin: 0;
@@ -131,6 +135,14 @@
 
     &__button{
       @include button;
+      
+      &:hover, &:focus-visible{
+        background: linear-gradient(
+         to bottom right,
+         #ff94e1,
+         #a06be1,
+        );
+      }
     }
 }
 

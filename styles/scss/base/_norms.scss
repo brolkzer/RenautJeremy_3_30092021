@@ -1,4 +1,4 @@
-*:not(.loader), *:not(.loader)::before, *:not(.loader)::after{
+*, *::before, *::after{
   box-sizing: border-box;
 }
 
@@ -18,4 +18,8 @@ body{
         visibility: visible;
       }
   }
+}
+
+.main_wrapper{
+  max-width: 1500px;
 }
