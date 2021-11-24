@@ -166,6 +166,8 @@ a {
 
 body {
   margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
   font-family: Roboto, sans-serif;
 }
 
@@ -178,7 +180,9 @@ body > .loader .loader__logo {
 }
 
 .main_wrapper {
-  max-width: 1500px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .heart--icons {
@@ -834,5 +838,50 @@ footer p {
 
 .fa-utensils {
   margin-right: calc(1rem + 6px);
+}
+
+@media screen and (min-width: 993px) {
+  .left_content, .right_content {
+    width: 50%;
+    max-width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+  .restaurants {
+    padding: 0;
+    margin-top: 0;
+  }
+  .restaurants h2 {
+    padding-left: 1rem;
+    margin: 0;
+  }
+  .restaurants > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .restaurants > div .vignette {
+    min-width: 480px;
+    height: 200px;
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

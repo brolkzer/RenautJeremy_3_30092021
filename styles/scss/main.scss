@@ -54,3 +54,40 @@ footer{
   margin-right: calc(1rem + 6px);
 }
 
+@media screen and (min-width: 993px){
+  .left_content, .right_content{
+    width: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_content{
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+
+  .restaurants{
+    padding: 0;
+    margin-top: 0;
+
+      h2{
+        padding-left: 1rem;
+        margin: 0;
+      }
+
+      &>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+          .vignette{
+            min-width: 480px;
+            height: 200px;
+            padding: 0;
+          }
+      }
+  }
+}
