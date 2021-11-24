@@ -55,8 +55,7 @@
   }
 
   70%{
-    transform: translateX(-10%);
-    transform: scale(0.85);
+    transform: translateX(-15%);
   }
 
   100%{
@@ -65,7 +64,7 @@
 }
 
 @keyframes stealth{
-  0%, 90%{
+  0%, 85%{
     opacity: 0;
   }  
   100%{

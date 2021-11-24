@@ -11,6 +11,7 @@
 .header__logo{
   @include flexCenter;
   height: 10vh;
+  position: relative;
   
   &__image{
     width: 50%;
@@ -54,7 +55,7 @@ footer{
   margin-right: calc(1rem + 6px);
 }
 
-@media screen and (min-width: 993px){
+@media screen and (min-width: 768px) and (max-width: 992px){
   .left_content, .right_content{
     width: 50%;
     max-width: 50%;
@@ -64,8 +65,21 @@ footer{
 
   .main_content{
     display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 0;
+  }
+
+  .top_content{
+    display: flex;
+    flex-direction: row;
+    background: hsl(0, 0, 95%);
+  }
+
+  .blockSteps{
+    margin: 0;
+    width: 50%;
+    background: hsl(0, 0, 95%);
   }
 
   .restaurants{
@@ -73,21 +87,118 @@ footer{
     margin-top: 0;
 
       h2{
-        padding-left: 1rem;
-        margin: 0;
+        text-align: center;
       }
 
       &>div{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
+        justify-content: space-evenly;
+        max-width: 992px;
 
           .vignette{
-            min-width: 480px;
-            height: 200px;
+            width: 90vw;
+            height: 45vh;
+            padding: 0;
+            background-position-y: 65%;
+          }
+      }
+  }
+
+  .restaurant{
+
+    &__menu{
+      margin-top: -40px;
+    }
+
+    &__image{
+      height: 450px;
+
+        &--photo{
+          height: 450px;
+        }
+    }
+  }    
+}
+
+@media screen and (min-width: 993px){
+
+  body{
+    max-width: 1400px;
+  }
+
+  .left_content, .right_content{
+    width: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main_content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .top_content{
+    display: flex;
+    flex-direction: row;
+    background: hsl(0, 0, 95%);
+  }
+
+  .blockSteps{
+    margin: 0;
+    width: 50%;
+    background: hsl(0, 0, 95%);
+  }
+
+  .restaurants{
+    padding: 0;
+    margin-top: 0;
+
+      h2{
+        text-align: center;
+      }
+
+      &>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: 1400px;
+
+          .vignette{
+            width: 45vw;
+            max-width: 650px;
+            height: 350px;
             padding: 0;
           }
+      }
+  }
+
+  .restaurant{
+
+    &__menu{
+      margin-top: -50px;
+    }
+
+    &__image{
+      height: 50vh;
+
+        &--photo{
+          height: 50vh;
+        }
+    }
+  } 
+
+  .menusDesktop{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+      .restaurant__plats{
+        width: 30vw;
+        max-width: 420px;
       }
   }
 }

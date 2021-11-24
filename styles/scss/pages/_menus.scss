@@ -23,6 +23,7 @@
 
         &:hover{
           box-shadow: 2px 2px 10px $clr-darkgrey; 
+          cursor: pointer;
         }
 
         &:hover .check, &:focus-visible .check{

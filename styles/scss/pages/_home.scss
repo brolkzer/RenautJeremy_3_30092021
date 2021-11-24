@@ -1,8 +1,9 @@
 .loader{
   @include flexCenter;
-  min-width: 100vw;
-  min-height: 100vh;  
-  background-color: $clr-green;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;  
+  background-color: white;
   opacity: 1;
   position: fixed;
   animation: loader 3s forwards;  
@@ -187,7 +188,6 @@
             color: black;
           }
         }
-
     }
 }
 
