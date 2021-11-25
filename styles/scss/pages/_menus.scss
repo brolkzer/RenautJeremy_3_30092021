@@ -27,9 +27,17 @@
         }
 
         &:hover .check, &:focus-visible .check{
-          transform: scaleX(100%);                   
+          transform: scaleX(100%);
+
+          .fa-check-circle{
+            transform: rotate(360deg);
+            transform-origin: center;
+
+            transition: 600ms 300ms;
+          }
         }
 
+       
         &:hover .restaurant__plats--p, &:hover .restaurant__plats--h3{
           max-width: calc(100% - 80px);
         }
@@ -83,7 +91,7 @@
           width: 100%;
           justify-content: space-between;
           align-items: center;
-          flex-direction: row;
+          flex-direction: row;          
         }
     }
 }
@@ -117,6 +125,19 @@
       background-color: $clr-green;
     }
 }
+
+.restaurant__menu--h1{
+
+  h1{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 30px);
+  
+  }
+}
+
+  
 
 .entreesFade{
   animation: fadeInEntrees 1s;

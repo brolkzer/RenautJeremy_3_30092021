@@ -25,4 +25,9 @@
   padding: 1rem 1.5rem;
   border-radius: 9999px;
   color: white;
+  box-shadow: 2px 2px 10px $clr-mediumgrey;
+  
+    &:hover{
+      box-shadow: 2px 2px 10px $clr-darkgrey;
+    }
 }

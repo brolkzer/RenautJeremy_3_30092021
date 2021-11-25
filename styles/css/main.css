@@ -367,6 +367,13 @@ body > .loader .loader__logo {
   padding: 1rem 1.5rem;
   border-radius: 9999px;
   color: white;
+  -webkit-box-shadow: 2px 2px 10px #a6a6a6;
+          box-shadow: 2px 2px 10px #a6a6a6;
+}
+
+.browse__button:hover {
+  -webkit-box-shadow: 2px 2px 10px #595954;
+          box-shadow: 2px 2px 10px #595954;
 }
 
 .browse__button:hover, .browse__button:focus-visible {
@@ -637,6 +644,15 @@ body > .loader .loader__logo {
           transform: scaleX(100%);
 }
 
+.restaurant__plats:hover .check .fa-check-circle, .restaurant__plats:focus-visible .check .fa-check-circle {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 600ms 300ms;
+  transition: 600ms 300ms;
+}
+
 .restaurant__plats:hover .restaurant__plats--p, .restaurant__plats:hover .restaurant__plats--h3 {
   max-width: calc(100% - 80px);
 }
@@ -736,6 +752,13 @@ body > .loader .loader__logo {
   background-color: #99E2D0;
 }
 
+.restaurant__menu--h1 h1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: calc(100% - 30px);
+}
+
 .entreesFade {
   -webkit-animation: fadeInEntrees 1s;
           animation: fadeInEntrees 1s;
@@ -771,6 +794,13 @@ body > .loader .loader__logo {
   padding: 1rem 1.5rem;
   border-radius: 9999px;
   color: white;
+  -webkit-box-shadow: 2px 2px 10px #a6a6a6;
+          box-shadow: 2px 2px 10px #a6a6a6;
+}
+
+.command__button:hover {
+  -webkit-box-shadow: 2px 2px 10px #595954;
+          box-shadow: 2px 2px 10px #595954;
 }
 
 .command__button:hover, .command__button:focus-visible {
