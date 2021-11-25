@@ -1,26 +1,32 @@
-.loader{
+.spinner{
   @include flexCenter;
-  width: 100%;
-  max-width: 1400px;
-  height: 100%;  
-  background-color: white;
-  opacity: 1;
-  position: fixed;
-  animation: loader 3s forwards;  
+  animation: spinnerEnd 3s cubic-bezier(1,0,1,0) forwards;
+  position: relative;
 
-    &__logo{      
-      height: 30vh;
-      width: 70vw;
-      object-fit: contain;
+    &__spin{
+      position: absolute;
+      top: 35vh;
+      width: 150px;
+      height: 150px;
+      border: 8px solid transparent;
+      border-top-color: $clr-green;
+      border-bottom-color: $clr-purple;
+      border-radius: 50%;
+      animation: spinner 2000ms ease-in-out backwards infinite;
+    }
 
-      animation: logo 3s forwards cubic-bezier(0,1.6,.03,1.61);
+    &__title{
+      position: absolute;
+      font-family: Shrikhand;
+      font-size: $size-large;
+      top: 42vh;
     }
 }
 
 .main_wrapper{
   opacity: 1;
 
-  animation: stealth 3s forwards;
+  animation: stealth 3500ms forwards;
 }
 
 .header__loc{

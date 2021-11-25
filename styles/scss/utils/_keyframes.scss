@@ -31,36 +31,32 @@
   }
 }
 
-@keyframes loader{
-  0%{
-    transform: translateY(0%)
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
   }
 
-  75%{
-    transform: translateY(0%)
+  33% {
+    transform: rotate(360deg);
+  }
+
+  66%{
+    transform: rotate(720deg);
   }
 
   100%{
-    transform: translateY(-100%)
+    transform: rotate(1080deg);
   }
 }
 
-@keyframes logo{
-  0%{
-    transform: translateX(0%);
-  }
-
-  50%{
-    transform: translateX(0%);
-  }
-
-  70%{
-    transform: translateX(-15%);
-  }
-
-  100%{
-    transform: translateX(100%);
-  }
+@keyframes spinnerEnd {
+  0%, 99%{
+    opacity: 1;
+   }
+   
+   100%{
+     opacity: 0;
+   }
 }
 
 @keyframes stealth{

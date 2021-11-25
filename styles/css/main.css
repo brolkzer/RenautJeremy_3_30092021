@@ -64,71 +64,59 @@
   }
 }
 
-@-webkit-keyframes loader {
+@-webkit-keyframes spinner {
   0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
-  75% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+  33% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  66% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
   }
   100% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
   }
 }
 
-@keyframes loader {
+@keyframes spinner {
   0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
-  75% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+  33% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  66% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
   }
   100% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
   }
 }
 
-@-webkit-keyframes logo {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  50% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  70% {
-    -webkit-transform: translateX(-15%);
-            transform: translateX(-15%);
+@-webkit-keyframes spinnerEnd {
+  0%, 99% {
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    opacity: 0;
   }
 }
 
-@keyframes logo {
-  0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  50% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  70% {
-    -webkit-transform: translateX(-15%);
-            transform: translateX(-15%);
+@keyframes spinnerEnd {
+  0%, 99% {
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    opacity: 0;
   }
 }
 
@@ -164,14 +152,11 @@ body {
   margin: 0 auto;
   width: 100%;
   font-family: Roboto, sans-serif;
-}
-
-body > .loader {
-  visibility: visible;
-}
-
-body > .loader .loader__logo {
-  visibility: visible;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .main_wrapper {
@@ -275,7 +260,7 @@ body > .loader .loader__logo {
   color: black;
 }
 
-.loader {
+.spinner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,29 +270,35 @@ body > .loader .loader__logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  max-width: 1400px;
-  height: 100%;
-  background-color: white;
-  opacity: 1;
-  position: fixed;
-  -webkit-animation: loader 3s forwards;
-          animation: loader 3s forwards;
+  -webkit-animation: spinnerEnd 3s cubic-bezier(1, 0, 1, 0) forwards;
+          animation: spinnerEnd 3s cubic-bezier(1, 0, 1, 0) forwards;
+  position: relative;
 }
 
-.loader__logo {
-  height: 30vh;
-  width: 70vw;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-animation: logo 3s forwards cubic-bezier(0, 1.6, 0.03, 1.61);
-          animation: logo 3s forwards cubic-bezier(0, 1.6, 0.03, 1.61);
+.spinner__spin {
+  position: absolute;
+  top: 35vh;
+  width: 150px;
+  height: 150px;
+  border: 8px solid transparent;
+  border-top-color: #99E2D0;
+  border-bottom-color: #9356DC;
+  border-radius: 50%;
+  -webkit-animation: spinner 2000ms ease-in-out backwards infinite;
+          animation: spinner 2000ms ease-in-out backwards infinite;
+}
+
+.spinner__title {
+  position: absolute;
+  font-family: Shrikhand;
+  font-size: 18px;
+  top: 42vh;
 }
 
 .main_wrapper {
   opacity: 1;
-  -webkit-animation: stealth 3s forwards;
-          animation: stealth 3s forwards;
+  -webkit-animation: stealth 3500ms forwards;
+          animation: stealth 3500ms forwards;
 }
 
 .header__loc {
