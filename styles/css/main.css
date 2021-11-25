@@ -184,9 +184,10 @@ body > .loader .loader__logo {
   padding-top: 1rem;
   padding-right: 1rem;
   position: relative;
+  display: inline-block;
 }
 
-.heart--icons .grey__heart, .heart--icons .pink__heart {
+.heart--icons .grey__heart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,14 +196,27 @@ body > .loader .loader__logo {
   right: 25px;
 }
 
+.heart--icons .pink__heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 17px;
+  right: 17px;
+}
+
 .heart--icons .grey__heart {
   color: #a6a6a6;
   visibility: visible;
 }
 
 .heart--icons .pink__heart {
-  color: #FF79DA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   visibility: hidden;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
 .heart--icons .fa-heart:first-of-type:hover + .fa-heart,
@@ -225,8 +239,8 @@ body > .loader .loader__logo {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 2px;
+  right: 12px;
 }
 
 .saisieFormulaire {
