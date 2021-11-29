@@ -56,6 +56,10 @@ footer{
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
+  .spinner__title{
+    top: 42vh;
+  }
+
   .left_content, .right_content{
     width: 50%;
     max-width: 50%;
@@ -125,6 +129,10 @@ footer{
 
   body{
     max-width: 1400px;
+  }
+
+  .spinner__title{
+    top: 42vh;
   }
 
   .left_content, .right_content{
