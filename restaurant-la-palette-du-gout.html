@@ -1,131 +1,187 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/d241de481a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ohmyfood - La palette du goût</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/css/main.css" />
-  <script src="https://kit.fontawesome.com/d241de481a.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap"
-    rel="stylesheet">
-  <title>Ohmyfood - La palette du goût</title>
-</head>
-
-<body>
-  <header>
-    <div class="header__logo">
-      <a href="./accueil.html"><i class="fas fa-arrow-left fa-lg header__arrow"></i></a>
-      <img src="MaquettesOhmyfood/images/logo/ohmyfood.png" class="header__logo__image" alt="Logo Ohmyfood">
-    </div>
-  </header>
-  <div class="restaurant">
-    <div class="restaurant__image">
-      <img src="MaquettesOhmyfood/images/restaurants/jay_wennington.jpg" class="restaurant__image--photo"
-        alt="Photo restaurant">
-    </div>
-    <div class="restaurant__menu">
-      <div class="restaurant__menu--h1">
-        <h1 class="menu__title">La palette du goût</h1>
-        <div class="heart--icons heart--icons--menu"><i class="far fa-heart fa-lg grey__heart"></i><i
-            class="fas fa-heart fa-lg pink__heart"></i></div>
+  <body>
+    <header>
+      <div class="header__logo">
+        <a href="./index.html"
+          ><i class="fas fa-arrow-left fa-lg header__arrow"></i
+        ></a>
+        <img
+          src="MaquettesOhmyfood/images/logo/ohmyfood.png"
+          class="header__logo__image"
+          alt="Logo Ohmyfood"
+        />
       </div>
-      <div class="menusDesktop">
-        <div class="entreesDesktop">
-          <h2 class="plats__title entreesFade">entrées</h2>
-          <div class="restaurant__plats entreesFade">
-            <h3 class="restaurant__plats--h3 plats__ellipsis">Fricassée d'escargot</h3>
-            <div class="restaurant__plats--p">
-              <p class="plats plats__ellipsis">Au piment d'Espelette </p>
-              <p class="plats plats__prix">25€</p>
-            </div>
-            <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
-          </div>
-          <div class="restaurant__plats entreesFade">
-            <h3 class="restaurant__plats--h3 plats__ellipsis">Foie gras de canard mi-cuit</h3>
-            <div class="restaurant__plats--p">
-              <p class="plats plats__ellipsis">Et ses copeaux de truffe noire</p>
-              <p class="plats plats__prix">35€</p>
-            </div>
-            <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
-          </div>
-          <div class="restaurant__plats restaurant__plats--closing entreesFade">
-            <h3 class="restaurant__plats--h3 plats__ellipsis">Oeuf au plat</h3>
-            <div class="restaurant__plats--p">
-              <p class="plats plats__ellipsis">Assaisonné à la truffe sur lit de caviar</p>
-              <p class="plats plats__prix">20€</p>
-            </div>
-            <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
+    </header>
+    <div class="restaurant">
+      <div class="restaurant__image">
+        <img
+          src="MaquettesOhmyfood/images/restaurants/jay_wennington.jpg"
+          class="restaurant__image--photo"
+          alt="Photo restaurant"
+        />
+      </div>
+      <div class="restaurant__menu">
+        <div class="restaurant__menu--h1">
+          <h1 class="menu__title">La palette du goût</h1>
+          <div class="heart--icons heart--icons--menu">
+            <i class="far fa-heart fa-lg grey__heart"></i
+            ><i class="fas fa-heart fa-lg pink__heart"></i>
           </div>
         </div>
-        <div class="platsDesktop">
-          <h2 class="plats__title platsFade">plats</h2>
-          <div class="restaurant__plats platsFade">
-            <h3 class="restaurant__plats--h3 plats__ellipsis">Filet de boeuf aux herbes</h3>
-            <div class="restaurant__plats--p">
-              <p class="plats plats__ellipsis">Accompagné de sa ribambelle de légumes</p>
-              <p class="plats plats__prix">40€</p>
+        <div class="menusDesktop">
+          <div class="entreesDesktop">
+            <h2 class="plats__title entreesFade">entrées</h2>
+            <div class="restaurant__plats entreesFade">
+              <h3 class="restaurant__plats--h3 plats__ellipsis">
+                Fricassée d'escargot
+              </h3>
+              <div class="restaurant__plats--p">
+                <p class="plats plats__ellipsis">Au piment d'Espelette</p>
+                <p class="plats plats__prix">25€</p>
+              </div>
+              <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
             </div>
-            <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
+            <div class="restaurant__plats entreesFade">
+              <h3 class="restaurant__plats--h3 plats__ellipsis">
+                Foie gras de canard mi-cuit
+              </h3>
+              <div class="restaurant__plats--p">
+                <p class="plats plats__ellipsis">
+                  Et ses copeaux de truffe noire
+                </p>
+                <p class="plats plats__prix">35€</p>
+              </div>
+              <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
+            </div>
+            <div
+              class="restaurant__plats restaurant__plats--closing entreesFade"
+            >
+              <h3 class="restaurant__plats--h3 plats__ellipsis">
+                Oeuf au plat
+              </h3>
+              <div class="restaurant__plats--p">
+                <p class="plats plats__ellipsis">
+                  Assaisonné à la truffe sur lit de caviar
+                </p>
+                <p class="plats plats__prix">20€</p>
+              </div>
+              <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
+            </div>
           </div>
-          <div class="restaurant__plats platsFade">
-            <h3 class="restaurant__plats--h3 plats__ellipsis">Parmentier de queue de boeuf</h3>
-            <div class="restaurant__plats--p">
-              <p class="plats plats__ellipsis">À la truffe noire sur sa purée de panais</p>
-              <p class="plats plats__prix">35€</p>
+          <div class="platsDesktop">
+            <h2 class="plats__title platsFade">plats</h2>
+            <div class="restaurant__plats platsFade">
+              <h3 class="restaurant__plats--h3 plats__ellipsis">
+                Filet de boeuf aux herbes
+              </h3>
+              <div class="restaurant__plats--p">
+                <p class="plats plats__ellipsis">
+                  Accompagné de sa ribambelle de légumes
+                </p>
+                <p class="plats plats__prix">40€</p>
+              </div>
+              <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
             </div>
-            <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
+            <div class="restaurant__plats platsFade">
+              <h3 class="restaurant__plats--h3 plats__ellipsis">
+                Parmentier de queue de boeuf
+              </h3>
+              <div class="restaurant__plats--p">
+                <p class="plats plats__ellipsis">
+                  À la truffe noire sur sa purée de panais
+                </p>
+                <p class="plats plats__prix">35€</p>
+              </div>
+              <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
+            </div>
+            <div class="restaurant__plats restaurant__plats--closing platsFade">
+              <h3 class="restaurant__plats--h3 plats__ellipsis">
+                Filet de turbot
+              </h3>
+              <div class="restaurant__plats--p">
+                <p class="plats plats__ellipsis">Aux agrumes</p>
+                <p class="plats plats__prix">44€</p>
+              </div>
+              <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
+            </div>
           </div>
-          <div class="restaurant__plats restaurant__plats--closing platsFade">
-            <h3 class="restaurant__plats--h3 plats__ellipsis">Filet de turbot</h3>
-            <div class="restaurant__plats--p">
-              <p class="plats plats__ellipsis">Aux agrumes</p>
-              <p class="plats plats__prix">44€</p>
+          <div class="dessertsDesktop">
+            <h2 class="plats__title dessertsFade">desserts</h2>
+            <div class="restaurant__plats dessertsFade">
+              <h3 class="restaurant__plats--h3 plats__ellipsis">Paris-Brest</h3>
+              <div class="restaurant__plats--p">
+                <p class="plats plats__ellipsis">Revisité</p>
+                <p class="plats plats__prix">18€</p>
+              </div>
+              <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
             </div>
-            <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
-          </div>
-        </div>
-        <div class="dessertsDesktop">
-          <h2 class="plats__title dessertsFade">desserts</h2>
-          <div class="restaurant__plats dessertsFade">
-            <h3 class="restaurant__plats--h3 plats__ellipsis">Paris-Brest</h3>
-            <div class="restaurant__plats--p">
-              <p class="plats plats__ellipsis">Revisité</p>
-              <p class="plats plats__prix">18€</p>
+            <div class="restaurant__plats dessertsFade">
+              <h3 class="restaurant__plats--h3 plats__ellipsis">
+                Macaron au chocolat d'exception
+              </h3>
+              <div class="restaurant__plats--p">
+                <p class="plats plats__ellipsis">
+                  Et glace à la vanille de Madagascar
+                </p>
+                <p class="plats plats__prix">22€</p>
+              </div>
+              <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
             </div>
-            <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
-          </div>
-          <div class="restaurant__plats dessertsFade">
-            <h3 class="restaurant__plats--h3 plats__ellipsis">Macaron au chocolat d'exception</h3>
-            <div class="restaurant__plats--p">
-              <p class="plats plats__ellipsis">Et glace à la vanille de Madagascar</p>
-              <p class="plats plats__prix">22€</p>
+            <div
+              class="restaurant__plats restaurant__plats--closing dessertsFade"
+            >
+              <h3 class="restaurant__plats--h3 plats__ellipsis">
+                Mousse au chocolat
+              </h3>
+              <div class="restaurant__plats--p">
+                <p class="plats plats__ellipsis">
+                  Au piment d'Espelette et à la truffe noire
+                </p>
+                <p class="plats plats__prix">23€</p>
+              </div>
+              <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
             </div>
-            <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
-          </div>
-          <div class="restaurant__plats restaurant__plats--closing dessertsFade">
-            <h3 class="restaurant__plats--h3 plats__ellipsis">Mousse au chocolat</h3>
-            <div class="restaurant__plats--p">
-              <p class="plats plats__ellipsis">Au piment d'Espelette et à la truffe noire</p>
-              <p class="plats plats__prix">23€</p>
-            </div>
-            <div class="check"><i class="fas fa-check-circle fa-2x"></i></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="command">
-    <a href="#" class="command__button">Commander</a>
-  </div>
-  <footer>
-    <h2>ohmyfood</h2>
-    <p><a href="#"><i class="fas fa-utensils footer--icons"></i>Proposer un restaurant</a></p>
-    <p><a href="#"><i class="fas fa-hands-helping footer--icons"></i>Devenir partenaire</a></p>
-    <p><a href="#">Mentions légales</a></p>
-    <p><a href="mailto:ohmyfood@outlook.com">Contact</a></p>
-  </footer>
-</body>
-
+    <div class="command">
+      <a href="#" class="command__button">Commander</a>
+    </div>
+    <footer>
+      <h2>ohmyfood</h2>
+      <p>
+        <a href="#"
+          ><i class="fas fa-utensils footer--icons"></i>Proposer un
+          restaurant</a
+        >
+      </p>
+      <p>
+        <a href="#"
+          ><i class="fas fa-hands-helping footer--icons"></i>Devenir
+          partenaire</a
+        >
+      </p>
+      <p><a href="#">Mentions légales</a></p>
+      <p><a href="mailto:ohmyfood@outlook.com">Contact</a></p>
+    </footer>
+  </body>
 </html>
